@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "cc196a02-73d9-4e7b-acf1-5fc294c9b24d",
+		"name": "Users Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8103/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8103/api/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"albert\",\n    \"lastName\": \"einstein\",\n    \"email\": \"ae@relativity.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8103/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"alberty\",\n    \"lastName\": \"einstein\",\n    \"email\": \"ae@relativity.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8103/api/user/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8103/api/user/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
